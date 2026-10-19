@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>TikTok Downloader 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="brand">
+      <span class="brand-icon">♫</span>
+      <span>tiktok<span class="pink">down</span></span>
+    </a>
+    <span class="nav-label">Free Downloader ✨</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill">💗 EASY & FREE</div>
+      <h1>TikTok <span class="pink">Downloader</span></h1>
+      <p class="subtitle">
+        Simpan video, foto, dan audio favoritmu
+        hanya dengan satu link!
+      </p>
+
+      <div class="download-card">
+        <label for="tiktokUrl" class="input-label">
+          🔗 Tempel link TikTok di sini
+        </label>
+
+        <div class="input-group">
+          <input
+            id="tiktokUrl"
+            type="url"
+            placeholder="https://www.tiktok.com/..."
+            autocomplete="url"
+          >
+          <button id="pasteBtn" class="paste-btn" type="button">
+            Tempel
+          </button>
+        </div>
+
+        <p class="helper">Pastikan link berasal dari TikTok yang valid.</p>
+
+        <label class="input-label">Pilih jenis media</label>
+        <div class="media-options">
+          <button class="media-option active" data-type="video" type="button">
+            <span class="media-icon">▶</span>
+            <span>Video</span>
+          </button>
+          <button class="media-option" data-type="photo" type="button">
+            <span class="media-icon">▧</span>
+            <span>Foto</span>
+          </button>
+          <button class="media-option" data-type="audio" type="button">
+            <span class="media-icon">♫</span>
+            <span>Audio</span>
+          </button>
+        </div>
+
+        <button id="downloadBtn" class="download-btn" type="button">
+          <span>↓</span> Proses & Download
+        </button>
+
+        <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+
+        <div id="result" class="result" hidden>
+          <p id="resultText"></p>
+          <a id="resultLink" class="result-link" href="#" hidden>
+            ↓ Unduh file
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Kenapa pakai kami? 💕</h2>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Cepat & Praktis</h3>
+          <p>Cukup tempel link untuk memulai proses.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">📱</div>
+          <h3>Semua Perangkat</h3>
+          <p>Tampilan nyaman di HP maupun laptop.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">🎀</div>
+          <h3>Mudah Digunakan</h3>
+          <p>Pilih video, foto, atau audio sesuai kebutuhan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <div class="history-heading">
+        <h2>Riwayat link</h2>
+        <button id="clearHistoryBtn" class="clear-btn" type="button">
+          Hapus riwayat
+        </button>
+      </div>
+      <ul id="historyList" class="history-list"></ul>
+      <p id="emptyHistory" class="empty-history">
+        Belum ada link yang diproses 🌷
+      </p>
+    </section>
+
+    <section class="notice">
+      <strong>💡 Catatan</strong>
+      <p>
+        Pengunduhan memerlukan layanan backend yang kompatibel.
+        Gunakan hanya untuk media yang kamu miliki atau yang
+        penggunaannya telah diizinkan pemiliknya.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💗 | TikTok Downloader</p>
+    <p class="footer-small">Bukan layanan resmi TikTok.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
